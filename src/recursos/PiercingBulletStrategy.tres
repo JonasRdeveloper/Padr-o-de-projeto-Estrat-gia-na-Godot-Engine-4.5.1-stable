@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="PiercingBulletStrategy" load_steps=2 format=3 uid="uid://bitiq8ppwcfja"]
+
+[ext_resource type="Script" uid="uid://bqd6ivs2k7bbb" path="res://src/roteiros/strategies/piercing_bullet_strategy.gd" id="1_3oaw5"]
+
+[resource]
+script = ExtResource("1_3oaw5")
+metadata/_custom_type_script = "uid://bqd6ivs2k7bbb"

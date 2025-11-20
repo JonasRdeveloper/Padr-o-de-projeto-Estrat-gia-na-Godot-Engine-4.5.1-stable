@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://da1rbyxq6yw22"]
+
+[ext_resource type="Texture2D" uid="uid://ch5nj6xj0jsp7" path="res://icon.svg" id="1_747ft"]
+
+[sub_resource type="Curve" id="Curve_sqps2"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.49999997, 0.25291824), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[node name="Particulas2D" type="CPUParticles2D"]
+texture = ExtResource("1_747ft")
+scale_amount_curve = SubResource("Curve_sqps2")

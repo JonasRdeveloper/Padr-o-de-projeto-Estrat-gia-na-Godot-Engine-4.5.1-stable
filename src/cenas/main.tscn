@@ -1,0 +1,30 @@
+[gd_scene load_steps=7 format=3 uid="uid://cd5m4nr17wrmn"]
+
+[ext_resource type="PackedScene" uid="uid://dijd0mdnjf0of" path="res://src/cenas/player.tscn" id="1_whhtd"]
+[ext_resource type="PackedScene" uid="uid://o31vijwxv3be" path="res://src/cenas/upgrade_pickup.tscn" id="2_5fp58"]
+[ext_resource type="PackedScene" uid="uid://blfmx7n1inmbt" path="res://src/cenas/Bullet.tscn" id="3_sw0t0"]
+[ext_resource type="Resource" uid="uid://dx0hqexnas8pw" path="res://src/recursos/DamageBulletStrategy.tres" id="4_sw0t0"]
+[ext_resource type="Resource" uid="uid://4ocqf4rp1kku" path="res://src/recursos/ParticleBulletStrategy.tres" id="5_5ijy1"]
+[ext_resource type="Resource" uid="uid://brdd1kdkwmimf" path="res://src/recursos/SpeedBulletStrategy.tres" id="6_glce1"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_whhtd")]
+position = Vector2(270, 166)
+bullet_scene = ExtResource("3_sw0t0")
+
+[node name="UpgradePickup" parent="." instance=ExtResource("2_5fp58")]
+position = Vector2(228, 421)
+upgrade_strategy = ExtResource("4_sw0t0")
+
+[node name="UpgradePickup2" parent="." instance=ExtResource("2_5fp58")]
+position = Vector2(419, 421)
+upgrade_strategy = ExtResource("5_5ijy1")
+
+[node name="UpgradePickup3" parent="." instance=ExtResource("2_5fp58")]
+position = Vector2(598, 418)
+upgrade_strategy = ExtResource("6_glce1")
+
+[connection signal="body_entered" from="UpgradePickup" to="UpgradePickup" method="_on_body_entered"]
+[connection signal="body_entered" from="UpgradePickup2" to="UpgradePickup2" method="_on_body_entered"]
+[connection signal="body_entered" from="UpgradePickup3" to="UpgradePickup3" method="_on_body_entered"]

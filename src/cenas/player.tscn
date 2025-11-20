@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://dijd0mdnjf0of"]
+
+[ext_resource type="Texture2D" uid="uid://ch5nj6xj0jsp7" path="res://icon.svg" id="1_lbonp"]
+[ext_resource type="Script" uid="uid://dh7hftgoi7cus" path="res://src/roteiros/player.gd" id="1_mm45n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_whhtd"]
+size = Vector2(112, 114)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_mm45n")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_lbonp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_whhtd")
+
+[node name="Marca2D" type="Marker2D" parent="."]
+position = Vector2(60, 0)
+gizmo_extents = 20.0
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="DanoLabel" type="Label" parent="HUD"]
+offset_left = 461.0
+offset_top = 53.0
+offset_right = 562.0
+offset_bottom = 76.0
+text = "Dano causado"

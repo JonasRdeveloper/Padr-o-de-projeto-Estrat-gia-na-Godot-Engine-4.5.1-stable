@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="DamageBulletStrategy" load_steps=2 format=3 uid="uid://dx0hqexnas8pw"]
+
+[ext_resource type="Script" uid="uid://bmwypjkihfvuh" path="res://src/roteiros/strategies/damage_bullet_strategy.gd" id="1_kd16j"]
+
+[resource]
+script = ExtResource("1_kd16j")
+extra_damage = 10
+metadata/_custom_type_script = "uid://bmwypjkihfvuh"

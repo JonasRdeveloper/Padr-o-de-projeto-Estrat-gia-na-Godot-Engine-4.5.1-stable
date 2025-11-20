@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="SpeedBulletStrategy" load_steps=2 format=3 uid="uid://brdd1kdkwmimf"]
+
+[ext_resource type="Script" uid="uid://c2ll2ftuw2u72" path="res://src/roteiros/strategies/speed_bullet_strategy.gd" id="1_8yidi"]
+
+[resource]
+script = ExtResource("1_8yidi")
+metadata/_custom_type_script = "uid://c2ll2ftuw2u72"

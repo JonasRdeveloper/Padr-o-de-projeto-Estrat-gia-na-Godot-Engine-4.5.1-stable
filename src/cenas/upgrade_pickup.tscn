@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://o31vijwxv3be"]
+
+[ext_resource type="Script" uid="uid://di5rnu5jdbtij" path="res://src/roteiros/upgrade_pickup.gd" id="1_d0efx"]
+[ext_resource type="Texture2D" uid="uid://ch5nj6xj0jsp7" path="res://icon.svg" id="1_n327e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d0efx"]
+size = Vector2(112, 116)
+
+[node name="UpgradePickup" type="Area2D"]
+script = ExtResource("1_d0efx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0, 1, 1, 1)
+texture = ExtResource("1_n327e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_d0efx")
+debug_color = Color(0.99726564, 0, 0.1793904, 0.41960785)

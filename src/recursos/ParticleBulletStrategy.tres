@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ParticleBulletStrategy" load_steps=3 format=3 uid="uid://4ocqf4rp1kku"]
+
+[ext_resource type="PackedScene" uid="uid://da1rbyxq6yw22" path="res://src/cenas/particulas_2d.tscn" id="1_37vps"]
+[ext_resource type="Script" uid="uid://blex50ldbtb8e" path="res://src/roteiros/strategies/particle_bullet_strategy.gd" id="1_wpa2g"]
+
+[resource]
+script = ExtResource("1_wpa2g")
+particle_scene = ExtResource("1_37vps")
+metadata/_custom_type_script = "uid://blex50ldbtb8e"
