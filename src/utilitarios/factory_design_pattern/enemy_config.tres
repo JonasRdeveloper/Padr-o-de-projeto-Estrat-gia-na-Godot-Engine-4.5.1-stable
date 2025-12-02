@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EnemyConfig" load_steps=4 format=3 uid="uid://ci5fl216moio5"]
+
+[ext_resource type="Script" uid="uid://dvoaduaumhva2" path="res://src/utilitarios/factory_design_pattern/enemy_config.gd" id="1_2d1lv"]
+[ext_resource type="PackedScene" uid="uid://c8fx1jtxr31g6" path="res://src/cenas/Goblin.tscn" id="1_aokle"]
+[ext_resource type="PackedScene" uid="uid://02hmtcwnse4y" path="res://src/cenas/Orc.tscn" id="2_1djdi"]
+
+[resource]
+script = ExtResource("1_2d1lv")
+enemy_scenes = {
+"goblin": ExtResource("1_aokle"),
+"orc": ExtResource("2_1djdi")
+}
+metadata/_custom_type_script = "uid://dvoaduaumhva2"

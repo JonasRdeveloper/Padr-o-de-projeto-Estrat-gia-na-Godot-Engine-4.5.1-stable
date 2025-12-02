@@ -7,6 +7,8 @@
 size = Vector2(112, 114)
 
 [node name="Player" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 29
 script = ExtResource("1_mm45n")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -20,6 +22,7 @@ position = Vector2(60, 0)
 gizmo_extents = 20.0
 
 [node name="HUD" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="DanoLabel" type="Label" parent="HUD"]
 offset_left = 461.0

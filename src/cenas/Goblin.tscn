@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://c8fx1jtxr31g6"]
+
+[ext_resource type="Script" uid="uid://h2o4iasbay45" path="res://src/utilitarios/factory_design_pattern/instancia_goblin.gd" id="1_bj8w3"]
+[ext_resource type="Texture2D" uid="uid://ch5nj6xj0jsp7" path="res://icon.svg" id="1_cllll"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bj8w3"]
+size = Vector2(112, 118)
+
+[node name="Corpo" type="CharacterBody2D" groups=["inimigos"]]
+collision_layer = 8
+collision_mask = 15
+script = ExtResource("1_bj8w3")
+
+[node name="Goblin" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Goblin"]
+modulate = Color(0, 1, 0, 1)
+texture = ExtResource("1_cllll")
+
+[node name="Rotulo_saude" type="Label" parent="Goblin"]
+offset_left = -20.0
+offset_top = -124.0
+offset_right = 20.0
+offset_bottom = -101.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_bj8w3")
+
+[node name="VisibleOnScreenNotifier" type="VisibleOnScreenNotifier2D" parent="."]
+rect = Rect2(-57, -58, 114, 116)
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier" to="Goblin" method="queue_free"]

@@ -31,27 +31,23 @@ upgrade_strategy = ExtResource("6_glce1")
 
 [node name="OrcSpawn" type="Marker2D" parent="PosicoesInimigos"]
 position = Vector2(1045, 501)
-gizmo_extents = 50.0
+gizmo_extents = 20.0
 
 [node name="OrcSpawn2" type="Marker2D" parent="PosicoesInimigos"]
 position = Vector2(1103, 354)
-gizmo_extents = 50.0
+gizmo_extents = 20.0
 
 [node name="OrcSpawn3" type="Marker2D" parent="PosicoesInimigos"]
 position = Vector2(1102, 118)
-gizmo_extents = 50.0
+gizmo_extents = 20.0
 
 [node name="OrcSpawn4" type="Marker2D" parent="PosicoesInimigos"]
 position = Vector2(946, 72)
-gizmo_extents = 50.0
+gizmo_extents = 20.0
 
 [node name="GoblinSpawn" type="Marker2D" parent="PosicoesInimigos"]
 position = Vector2(911, 237)
-gizmo_extents = 30.0
-
-[node name="GoblinSpawn2" type="Marker2D" parent="PosicoesInimigos"]
-position = Vector2(617, 151)
-gizmo_extents = 30.0
+gizmo_extents = 20.0
 
 [connection signal="body_entered" from="UpgradePickup" to="UpgradePickup" method="_on_body_entered"]
 [connection signal="body_entered" from="UpgradePickup2" to="UpgradePickup2" method="_on_body_entered"]
