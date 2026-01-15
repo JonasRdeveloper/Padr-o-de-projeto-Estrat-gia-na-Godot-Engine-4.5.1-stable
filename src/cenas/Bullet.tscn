@@ -21,4 +21,7 @@ scale = Vector2(0.25, 0.25)
 shape = SubResource("RectangleShape2D_m7a87")
 debug_color = Color(0.5665879, 0.55781174, 1.92523e-07, 0.41960785)
 
+[node name="VisibleOnScreenNotifier" type="VisibleOnScreenNotifier2D" parent="."]
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier" to="." method="queue_free"]

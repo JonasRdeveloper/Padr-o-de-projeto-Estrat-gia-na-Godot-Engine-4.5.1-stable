@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://c8fx1jtxr31g6"]
+[gd_scene load_steps=5 format=3 uid="uid://c8fx1jtxr31g6"]
 
 [ext_resource type="Script" uid="uid://h2o4iasbay45" path="res://src/utilitarios/factory_design_pattern/instancia_goblin.gd" id="1_bj8w3"]
 [ext_resource type="Texture2D" uid="uid://ch5nj6xj0jsp7" path="res://icon.svg" id="1_cllll"]
+[ext_resource type="PackedScene" uid="uid://bcffb2ud3efim" path="res://src/cenas/Explosao.tscn" id="3_pw2kx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bj8w3"]
 size = Vector2(112, 118)
@@ -28,5 +29,7 @@ shape = SubResource("RectangleShape2D_bj8w3")
 
 [node name="VisibleOnScreenNotifier" type="VisibleOnScreenNotifier2D" parent="."]
 rect = Rect2(-57, -58, 114, 116)
+
+[node name="Explosao" parent="." instance=ExtResource("3_pw2kx")]
 
 [connection signal="screen_exited" from="VisibleOnScreenNotifier" to="Goblin" method="queue_free"]

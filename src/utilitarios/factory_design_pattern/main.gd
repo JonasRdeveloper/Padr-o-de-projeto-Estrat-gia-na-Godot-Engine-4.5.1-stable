@@ -5,13 +5,9 @@ var factory: EnemyFactory
 @onready var spawn_points := {
 	"goblin": [
 		$PosicoesInimigos/GoblinSpawn,
-		$PosicoesInimigos/GoblinSpawn2
 	],
 	"orc": [
 		$PosicoesInimigos/OrcSpawn,
-		$PosicoesInimigos/OrcSpawn2,
-		$PosicoesInimigos/OrcSpawn3,
-		$PosicoesInimigos/OrcSpawn4
 	]
 }
 

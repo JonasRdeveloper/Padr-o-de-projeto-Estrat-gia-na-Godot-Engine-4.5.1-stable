@@ -1,5 +1,5 @@
 @abstract
-class_name Interface_factory extends Node2D
+class_name Interface_factory extends CharacterBody2D
 
 @abstract
 func ataque() -> void
